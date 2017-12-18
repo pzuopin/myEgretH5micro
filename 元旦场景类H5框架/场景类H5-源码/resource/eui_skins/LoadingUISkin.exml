@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingUISkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Config id="1591be0579e" visible="false"/>
+	<e:Image source="p0_bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image y="425" x="137" source="p0_loading_bg_png" width="367" height="33"/>
+	<e:Image id="loadPg" source="p0_loading_bg0_png" y="425" x="137" width="367" height="33"/>
+	<e:Image source="p0_text_loading_png" y="500" horizontalCenter="0"/>
+	<e:Image id="ip" source="loading_ip_png" y="362" x="2"/>
+</e:Skin>

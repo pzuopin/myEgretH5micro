@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PageASkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+    <w:Declarations>
+        <tween:TweenGroup id="pageAAnim">
+					<tween:TweenItem target="{group}">
+						<tween:Set/>
+					</tween:TweenItem>
+
+        </tween:TweenGroup>
+        <tween:TweenGroup id="pageAAnim2">
+            <tween:TweenItem target="{image}">
+                <tween:Set>
+                    <tween:props>
+                        <e:Object rotation="{19}"/>
+                    </tween:props>
+                </tween:Set>
+                <tween:To duration="1000" ease="quadOut">
+                    <tween:props>
+                        <e:Object rotation="{-8}"/>
+                    </tween:props>
+                </tween:To>
+                <tween:To duration="1000" ease="quadOut">
+                    <tween:props>
+                        <e:Object rotation="{19}"/>
+                    </tween:props>
+                </tween:To>
+            </tween:TweenItem>
+        </tween:TweenGroup>
+			<tween:TweenGroup id="nextBtnAnim">
+				<tween:TweenItem target="{nextBtn}">
+					<tween:Set/>
+					<tween:To duration="350" ease="quadIn">
+						<tween:props>
+							<e:Object alpha="{0.2}"/>
+						</tween:props>
+					</tween:To>
+					<tween:To duration="550" ease="quadInOut"/>
+				</tween:TweenItem>
+			</tween:TweenGroup>
+    </w:Declarations>
+	<e:Scroller id="sc" width="640" height="1006" horizontalCenter="0" top="0">
+        <e:Group id="pagea" horizontalCenter="0" top="0">
+            <e:Image id="bg" source="p1_bg_png" x="0" y="0"/>
+            <e:Image id="title" source="p1_title_png" x="90" y="28"/>
+            <e:Group id="group" height="500" y="310" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0">
+                <e:Image source="p1_ip_png" x="82" y="1"/>
+                <e:Image id="image" source="p1_pao_png" x="216" y="347" anchorOffsetX="189" anchorOffsetY="134"/>
+            </e:Group>
+            <e:Button id="nextBtn" label="" y="895" width="76" horizontalCenter="0">
+                <e:skinName>
+                    <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="p0_arrow_red_png" source.down="p0_arrow_red_png"/>
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+                    </e:Skin>
+                </e:skinName>
+            </e:Button>
+        </e:Group>
+    </e:Scroller>
+</e:Skin>

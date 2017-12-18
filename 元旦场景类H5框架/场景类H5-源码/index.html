@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>果宝陪你共度跨年夜</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <style>
+        html,
+        body {
+            -ms-touch-action: none;
+            padding: 0;
+            background: #000000;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.web.js" src-release="libs/modules/game/game.web.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/eui/eui.js" src-release="libs/modules/eui/eui.min.js"></script>
+	<script egret="lib" src="libs/modules/particle/particle.js" src-release="libs/modules/particle/particle.min.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>            
+			/*! wechat share */
+            $(function() {
+            var H5URL = "http://h5.hiwechats.com/yd2016/";
+            var wxTitle = "果宝陪你共度跨年夜",
+                wxDesc = "再见2016你好2017，果宝陪你共度跨年夜……",
+                sUrl = H5URL;             
+
+            // 异步注入微信分享            
+            var url = ""; // 换成您的微信分享接口URL 成功回调后才能自动播放音乐哦
+            $.ajax({
+                url: url + encodeURIComponent(location.href.split('#')[0]),
+                dataType: 'json',
+                success: function(res) {
+                    wx.config({
+                        debug: false,
+                        appId: res.appid,
+                        timestamp: res.timeStamp,
+                        nonceStr: res.nonceStr,
+                        signature: res.signature,
+                        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone']
+                    });
+                    shareInfo(H5URL, wxDesc); // 调用分享
+                }
+            });
+
+            function shareInfo(shareUrl, shareDesc) {
+                var shareUrl = shareUrl || baseUrl,
+                    shareTitle = wxTitle,
+                    shareDesc = shareDesc || document.title,
+                    shareLogo = H5URL + 'wxicon.jpg';
+
+                function shareSuccess() {};
+
+                wx.ready(function() {
+                    setShareUrl();
+                    setMusic();
+                });
+
+                function setMusic() {
+                    var media = document.getElementById("musicBox");
+                    if(!media.src) {
+                        media.src = H5URL + "resource/assets/sound/bgm.mp3";
+                        media.loop = true;
+                        media.play();                        
+                    }                    
+                }
+
+                function setShareUrl() {
+                    wx.onMenuShareTimeline({
+                        title: shareDesc,
+                        link: shareUrl,
+                        imgUrl: shareLogo,
+                        success: function() {
+                            shareSuccess();
+                        },
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareAppMessage({
+                        title: shareTitle,
+                        desc: shareDesc,
+                        link: shareUrl,
+                        imgUrl: shareLogo,
+                        type: 'link',
+                        dataUrl: '',
+                        success: function() {
+                            shareSuccess();
+                        },
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareQQ({
+                        title: shareTitle,
+                        desc: shareDesc,
+                        link: shareUrl,
+                        imgUrl: shareLogo,
+                        success: function() {
+                            shareSuccess();
+                        },
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareWeibo({
+                        title: shareTitle,
+                        desc: shareDesc,
+                        link: shareUrl,
+                        imgUrl: shareLogo,
+                        success: function() {
+                            shareSuccess();
+                        },
+                        cancel: function() {}
+                    });
+                    wx.onMenuShareQZone({
+                        title: shareTitle,
+                        desc: shareDesc,
+                        link: shareUrl,
+                        imgUrl: shareLogo,
+                        success: function() {
+                            shareSuccess();
+                        },
+                        cancel: function() {}
+                    });
+                }
+            }
+        });
+	</script>
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script egret="game" src="bin-debug/App.js"></script>
+	<script egret="game" src="bin-debug/base/BaseClass.js"></script>
+	<script egret="game" src="bin-debug/event/LEvent.js"></script>
+	<script egret="game" src="bin-debug/event/LListener.js"></script>
+	<script egret="game" src="bin-debug/loadUI/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/other/AssetAdapter.js"></script>
+	<script egret="game" src="bin-debug/other/ThemeAdapter.js"></script>
+	<script egret="game" src="bin-debug/page/PageBase.js"></script>
+	<script egret="game" src="bin-debug/page/PageA.js"></script>
+	<script egret="game" src="bin-debug/page/PageB.js"></script>
+	<script egret="game" src="bin-debug/page/PageC.js"></script>
+	<script egret="game" src="bin-debug/page/PageD.js"></script>
+	<script egret="game" src="bin-debug/page/PageE.js"></script>
+	<script egret="game" src="bin-debug/Scene.js"></script>
+	<script egret="game" src="bin-debug/utils/DeviceUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/EffectUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/GetDataUtils.js"></script>
+	<script egret="game" src="bin-debug/utils/UtilsClass/BitmapBlink.js"></script>
+	<!--game_files_end-->
+</head>
+
+<body>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto"
+        data-scale-mode="noBorder" data-frame-rate="60" data-content-width="640" data-content-height="1007" data-show-paint-rect="false"
+        data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-log-filter="" data-show-fps-style="x:0,y:0,size:14,textColor:0x00c200,bgAlpha:0.9">
+    </div>
+
+    <script>
+		/**
+         * {
+         * "renderMode":, //引擎渲染模式，"canvas" 或者 "webgl"
+         * "audioType": "" //使用的音频类型，0:默认，1:qq audio，2:web audio，3:audio
+         * "antialias": //WebGL模式下是否开启抗锯齿，true:开启，false:关闭，默认为false
+         * }
+         **/
+        egret.runEgret({renderMode:"webgl", audioType:2});
+    </script>
+
+    <audio style="display:none" id="musicBox" preload="metadata" controls autoplay="false" />
+</body>
+
+</html>

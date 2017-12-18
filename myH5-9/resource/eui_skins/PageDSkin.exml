@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PageDSkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="pageDAnim">
+			<tween:TweenItem target="{image}">
+				<tween:Set/>
+				<tween:To duration="650">
+					<tween:props>
+						<e:Object y="{23.99}" alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="pageDAnim2">
+			<tween:TweenItem target="{image0}">
+				<tween:Set/>
+				<tween:To duration="1250">
+					<tween:props>
+						<e:Object rotation="{0}" scaleY="{0.5}" scaleX="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+					<tween:props>
+						<e:Object rotation="{0}" scaleY="{1.2}" scaleX="{1.2}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2350">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}" rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+
+				<tween:Set/>
+				<tween:To duration="1550">
+				<tween:props>
+					<e:Object scaleX="{0.5}" scaleY="{0.5}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="400">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="2050">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+
+				<tween:Set/>
+				<tween:To duration="1150">
+				<tween:props>
+					<e:Object scaleX="{0.5}" scaleY="{0.5}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="600">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="2250">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}" rotation="{0}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="pageDAnim3">
+			<tween:TweenItem target="{lightgroup}">
+				<tween:Set/>
+				<tween:To duration="2000" ease="sineIn">
+					<tween:props>
+						<e:Object rotation="{2.07}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="2000" ease="sineOut">
+					<tween:props>
+						<e:Object rotation="{18.12}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image3}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0.5}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image4}">
+				<tween:Set>
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object alpha="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="pageDAnim4">
+			<tween:TweenItem target="{image0}">
+				<tween:Set/>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{90}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{180}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{270}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{360}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image2}">
+				<tween:Set/>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{90}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{180}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{270}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{360}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image1}">
+				<tween:Set/>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{90}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{180}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{270}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="1000">
+				<tween:props>
+					<e:Object rotation="{360}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Scroller id="sc" width="640" height="1006" x="0" y="0">
+		<e:Group>
+			<e:Image source="p5_bg_png" x="0" y="0"/>
+			<e:Image id="image" source="p5_logo_png" x="468" y="51.94" alpha="0.5"/>
+			<e:Group id="textBox" width="624.25" height="786.36" x="3.67" y="77.36" anchorOffsetX="-0.57" anchorOffsetY="1.36" visible="false">
+				<e:Image source="p5_L1_t1_png" x="22.76" y="27"/>
+				<e:Image source="p5_L1_t2_png" x="73.14" y="18.36"/>
+				<e:Image source="p5_L1_t3_png" x="123.28" y="15.04"/>
+				<e:Image source="p5_L1_t4_png" x="156.36" y="13.08"/>
+				<e:Image source="p5_L1_t5_png" x="190" y="5.6"/>
+				<e:Image source="p5_L1_t7_png" x="244" y="19"/>
+				<e:Image source="p5_L2_t1_png" x="17" y="114.56"/>
+				<e:Image source="p5_L2_t2_png" x="66.76" y="108.68"/>
+				<e:Image source="p5_L2_t3_png" x="101.76" y="95.08"/>
+				<e:Image source="p5_L2_t4_png" x="147.28" y="84.12"/>
+				<e:Image source="p5_L2_t5_png" x="203" y="67.64"/>
+				<e:Image source="p5_L2_t6_png" x="250.44" y="58.54"/>
+				<e:Image source="p5_L2_t7_png" x="298.88" y="48.16"/>
+				<e:Image source="p5_L2_t8_png" x="343" y="36.64"/>
+				<e:Image source="p5_L2_t9_png" x="390" y="34.4"/>
+				<e:Image source="p5_L3_t1_png" x="12.87" y="204.16"/>
+				<e:Image source="p5_L3_t2_png" x="61.76" y="189.08"/>
+				<e:Image source="p5_L3_t3_png" x="111.76" y="183"/>
+				<e:Image source="p5_L3_t4_png" x="137.78" y="179"/>
+				<e:Image source="p5_L3_t5_png" x="168.22" y="172.36"/>
+				<e:Image source="p5_L3_t6_png" x="191.76" y="163.52"/>
+				<e:Image source="p5_L3_t7_png" x="216.72" y="224.54" anchorOffsetX="-4.55" anchorOffsetY="40.91"/>
+				<e:Image source="p5_L4_t1_png" x="236.76" y="142.63"/>
+				<e:Image source="p5_L4_t2_png" x="276.76" y="134"/>
+				<e:Image source="p5_L4_t3_png" x="315.76" y="133.5"/>
+				<e:Image source="p5_L4_t4_png" x="350.5" y="124.08"/>
+				<e:Image source="p5_L4_t5_png" x="407.5" y="114"/>
+				<e:Image source="p5_L4_t6_png" x="454.55" y="110"/>
+				<e:Image source="p5_L4_t7_png" x="499.18" y="94.5"/>
+				<e:Image source="p5_L5_t1_png" x="3" y="266.52"/>
+				<e:Image source="p5_L5_t2_png" x="36.88" y="257.52"/>
+				<e:Image source="p5_L5_t3_png" x="68.4" y="247.04"/>
+				<e:Image source="p5_L5_t4_png" x="105.92" y="241.08"/>
+				<e:Image source="p5_L5_t5_png" x="148.48" y="237.6"/>
+				<e:Image source="p5_L5_t6_png" x="182" y="232"/>
+				<e:Image source="p5_L5_t7_png" x="210.64" y="231.72"/>
+				<e:Image source="p5_L5_t8_png" x="229" y="210.08"/>
+				<e:Image source="p5_L5_t9_png" x="284.92" y="194.16"/>
+				<e:Image source="p5_L6_t1_png" x="332.04" y="185.04"/>
+				<e:Image source="p5_L6_t2_png" x="379" y="175.2"/>
+				<e:Image source="p5_L6_t3_png" x="427.92" y="161.56"/>
+				<e:Image source="p5_L6_t4_png" x="471.05" y="162"/>
+				<e:Image source="p5_L7_t1_png" x="6" y="333"/>
+				<e:Image source="p5_L7_t2_png" x="69.26" y="314"/>
+				<e:Image source="p5_L7_t3_png" x="131" y="303"/>
+				<e:Image source="p5_L7_t4_png" x="193" y="304.56"/>
+				<e:Image source="p5_L7_t5_png" x="225" y="278.52"/>
+				<e:Image source="p5_L8_t1_png" x="86.28" y="379.5"/>
+				<e:Image source="p5_L8_t2_png" x="139.92" y="374.5"/>
+				<e:Image source="p5_L8_t3_png" x="191.76" y="355.44"/>
+				<e:Image source="p5_L8_t4_png" x="255.76" y="332.5"/>
+				<e:Image source="p5_L9_t2_png" x="244" y="410"/>
+				<e:Image source="p5_L9_t3_png" x="171.56" y="427"/>
+				<e:Image source="p5_L9_t4_png" x="306" y="394"/>
+				<e:Image source="p5_L1_t6_png" x="213.76" y="4.709999999999994" scaleX="1" scaleY="1"/>
+				<e:Image source="p5_L9_t1_png" x="134.10281514895232" y="436.5148376542895" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="group" width="368.18" height="260.61" x="157.24000000000004" y="564.79" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+				<e:Image source="p5_ip_png" x="-130.24000000000004" y="-14.399999999999977" scaleX="1" scaleY="1"/>
+				<e:Group id="lightgroup" width="200" height="200" x="-44.5" y="41.88" anchorOffsetX="43.94" anchorOffsetY="36.36" rotation="18.12" scaleX="1" scaleY="1">
+					<e:Image id="image3" source="p5_deng_png" x="-20.74" y="18.88" rotation="0.46" anchorOffsetX="17.65" anchorOffsetY="18.74" scaleX="1" scaleY="1" alpha="0.5"/>
+					<e:Image id="image4" source="p5_dengxin_png" x="12.09" y="82.98" scaleX="1" scaleY="1" alpha="0"/>
+				</e:Group>
+			</e:Group>
+			<e:Button id="shareBtn" label="" y="897.44" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="p5_share_png" source.down="p5_share_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="yanhuagroup" width="200" height="200" x="432.22" y="303.08" scaleX="1" scaleY="1">
+				<e:Image id="image0" source="p5_yanhua1_png" x="130.23" y="38.62" anchorOffsetX="71.21" anchorOffsetY="69.7"/>
+				<e:Image id="image2" source="p5_yanhua3_png" x="155.1" y="185.75" anchorOffsetX="31.82" anchorOffsetY="33.33"/>
+				<e:Image id="image1" source="p5_yanhua2_png" x="26.51" y="157.36" anchorOffsetX="43.94" anchorOffsetY="43.94"/>
+			</e:Group>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="sharemask" source="p5_share_bg_png" x="0" visible="false"/>
+</e:Skin>

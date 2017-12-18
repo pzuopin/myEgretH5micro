@@ -1,0 +1,17 @@
+{
+  "skins": {
+    "eui.Button": "resource/eui_skins/ButtonSkin.exml",
+    "eui.Scroller": "resource/eui_skins/ScrollerSkin.exml"
+  },
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/eui_skins/ButtonSkin.exml",
+    "resource/eui_skins/LoadingUISkin.exml",
+    "resource/eui_skins/PageASkin.exml",
+    "resource/eui_skins/PageBSkin.exml",
+    "resource/eui_skins/PageCSkin.exml",
+    "resource/eui_skins/PageDSkin.exml",
+    "resource/eui_skins/ScrollerSkin.exml"
+  ],
+  "path": "resource/default.thm.json"
+}

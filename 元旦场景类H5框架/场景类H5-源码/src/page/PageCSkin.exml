@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PageCSkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="159212daeab"/>
+	<e:Scroller id="sc" width="640" height="1006" alpha="1" y="0" x="0">
+		<e:Group top="0" horizontalCenter="0">
+			<e:Image id="bg" source="p3_bg_png" scaleX="1" scaleY="1"  verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="topBg" source="p3_top_bg_png" top="0" horizontalCenter="0"/>			
+			<e:Image id="huaTong" source="p3_huatong_png" x="437.66" y="624.33" anchorOffsetX="17.33" anchorOffsetY="101.33"/>
+			<e:Image source="p3_qipao_png" x="88" y="410"/>
+			<e:Image id="title" source="p3_title_png" y="115" horizontalCenter="0"/>
+			<e:Image source="p3_music_1_png" x="512.36" y="573.67"/>
+			<e:Image id="musicFlag" source="p3_music_2_png" x="481.36" y="487.04"/>
+			<e:Image id="han" source="p3_han_png" x="157.68" y="595.5"/>
+			<e:Image source="p3_ip_png" y="472.7" horizontalCenter="26"/>
+			<e:Group id="textBox" width="531" y="715" horizontalCenter="0.5">
+				<e:Label text="成长需要勇气" y="7" textColor="0xfffffd" horizontalCenter="0.5" fontFamily="PMingLiU"/>
+				<e:Label text="新的一年" y="54" textColor="0xfffffd" horizontalCenter="0" fontFamily="PMingLiU"/>
+				<e:Label text="迎接新的挑战" y="99" textColor="0xfffffd" horizontalCenter="0" fontFamily="PMingLiU"/>
+				<e:Label text="......" y="144" textColor="0xfffffd" horizontalCenter="0" fontFamily="PMingLiU"/>
+			</e:Group>
+			<e:Image id="arrow" source="p3_arrow_white_png" y="900" horizontalCenter="0"/>					
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

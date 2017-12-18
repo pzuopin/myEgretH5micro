@@ -1,0 +1,15 @@
+{
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    "resource/eui_skins/LoadingUISkin.exml",
+    "resource/eui_skins/ScrollerSkin.exml",
+    "src/page/PageASkin.exml",
+    "src/page/PageBSkin.exml",
+    "src/page/PageCSkin.exml",
+    "src/page/PageDSkin.exml",
+    "src/page/PageESkin.exml"
+  ],
+  "skins": {
+    "eui.Scroller": "resource/eui_skins/ScrollerSkin.exml"
+  }
+}

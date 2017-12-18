@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PageCSkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="pageCAnim">
+			<tween:TweenItem target="{image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{173}" y="{41.71}" alpha="{0}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="600" ease="circOut">
+					<tween:props>
+						<e:Object alpha="{1}" x="{175}" y="{80.32}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{image0}">
+				<tween:Wait duration="150"/>
+				<tween:Set/>
+				<tween:To duration="1100">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label}">
+				<tween:Wait duration="500"/>
+				<tween:Set/>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object alpha="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label0}">
+				<tween:Wait duration="800"/>
+				<tween:Set/>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label1}">
+				<tween:Wait duration="1100"/>
+				<tween:Set/>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{label2}">
+				<tween:Wait duration="1400"/>
+				<tween:Set/>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object alpha="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="pageCAnim2">
+			<tween:TweenItem target="{image1}">
+				<tween:Set/>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{26.63}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="500">
+					<tween:props>
+						<e:Object rotation="{0}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Scroller id="sc" width="640" height="1006" x="0" y="0">
+		<e:Group>
+			<e:Image source="p3_bg_png" x="0" y="0"/>
+			<e:Image source="p3_top_bg_png" x="0" y="0"/>
+			<e:Image id="image" source="p3_title_png" x="165" y="120.5" alpha="0"/>
+			<e:Group id="group" width="200" height="200" y="475.22" horizontalCenter="16">
+				<e:Image id="image0" source="p3_han_png" x="-81.00000000000003" y="100.00000000000011" scaleX="1" scaleY="1" alpha="0"/>
+				<e:Image id="image1" source="p3_huatong_png" x="191.04" y="129.69" anchorOffsetX="15.16" anchorOffsetY="119.69"/>
+				<e:Image source="p3_ip_png" y="-25" horizontalCenter="-2" x="-74.00000000000003" scaleX="1" scaleY="1"/>
+				<e:Image source="p3_qipao_png" x="-128" y="-47.49999999999994" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Button id="nextBtn" label="" y="885" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="p3_arrow_white_png" source.down="p3_arrow_white_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="textBox" width="200" height="200" y="681.44" horizontalCenter="0">
+				<e:Label id="label" text="成长需要勇气" y="27.4" textColor="0xed2f99" horizontalCenter="0" alpha="0"/>
+				<e:Label id="label0" text="新的一年" y="72.96" textColor="0xb71f7d" horizontalCenter="0" alpha="0"/>
+				<e:Label id="label1" text="迎接新的挑战" y="112.33" textColor="0x891161" horizontalCenter="0" alpha="0"/>
+				<e:Label id="label2" text="......" y="145.92" textColor="0x7c0873" horizontalCenter="0.5" alpha="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

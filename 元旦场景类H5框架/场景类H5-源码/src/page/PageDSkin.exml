@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PageDSkin" width="640" height="1007" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="159212daeab" />
+	<e:Scroller id="sc" width="640" height="1006" alpha="1" y="0" horizontalCenter="0" scrollPolicyH="off">
+		<e:Group y="0" x="0">
+			<e:Image id="bg" source="p4_bg_png" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"  width="640" height="1007"/>
+			<e:Group id="ipSm" y="34" x="357">
+				<e:Image source="p4_ip_sm_png" scaleX="1" scaleY="1"  anchorOffsetX="134.85" anchorOffsetY="19.7" y="19.7" x="134.85"/>
+			</e:Group>
+			<e:Group id="ipLg">
+				<e:Image source="p4_ip_lg_png" x="261.88" y="8.73" scaleX="1" scaleY="1"  anchorOffsetX="237.88" anchorOffsetY="22.73"/>
+				<e:Image id="eyeL" source="p4_eye_png" x="167" y="380"  anchorOffsetX="16" anchorOffsetY="13"/>
+				<e:Image id="eyeR" source="p4_eye_r_png" x="238" y="385"  anchorOffsetX="16" anchorOffsetY="13"/>
+			</e:Group>
+			<e:Group id="textBox" width="531" y="667" horizontalCenter="0.5">
+				<e:Label text="看过最美的风景" y="9" textColor="0xa9c781" horizontalCenter="0.5" fontFamily="PMingLiU" />
+				<e:Label text="看过最亮的星星" y="54" textColor="0xa9c781" horizontalCenter="0" fontFamily="PMingLiU" />
+				<e:Label text="在追求梦想的道路上" y="99" textColor="0xa9c781" horizontalCenter="0" fontFamily="PMingLiU" />
+				<e:Label text="继续远行" y="145" textColor="0xa9c781" horizontalCenter="0.5" fontFamily="PMingLiU" x="141" />
+				<e:Label text="......" y="190" textColor="0xa9c781" horizontalCenter="0" fontFamily="PMingLiU" />
+			</e:Group>
+			<e:Image id="arrow" y="900" horizontalCenter="0" source="p3_arrow_white_png" />
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

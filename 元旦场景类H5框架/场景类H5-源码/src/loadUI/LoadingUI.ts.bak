@@ -1,0 +1,67 @@
+class LoadingUI extends egret.Sprite {
+
+    public constructor() {
+        super();
+        this.createView();
+
+        let _s: eui.Rect = new eui.Rect;
+        console.log(_s);
+    }
+
+
+
+    private sW: number = egret.MainContext.instance.stage.stageWidth;
+    private sH: number = egret.MainContext.instance.stage.stageHeight;
+    private textField: egret.TextField;
+    private loadLineBg: egret.Shape;
+    private loadLine: egret.Shape;
+
+
+    private createView(): void {
+        this.loadLineBg = new egret.Shape();
+        this.loadLineBg.graphics.lineStyle(1, 0xf1f2f3);
+        this.loadLineBg.graphics.moveTo(this.sW * 0.25, this.sH / 2);
+        this.loadLineBg.graphics.lineTo(this.sW * 0.75, this.sH / 2);
+        this.loadLineBg.graphics.endFill();
+        this.addChild(this.loadLineBg);
+        this.drawLine(this.sW * 0.3);
+        this.drawIp();
+        // this.drawText();
+    }
+
+    private drawLine(len: number) {
+        this.loadLine = new egret.Shape();
+        this.loadLine.graphics.lineStyle(1, 0x00ff00);
+        this.loadLine.graphics.moveTo(this.sW * 0.25, this.sH / 2);
+        this.loadLine.graphics.lineTo(len, this.sH / 2);
+        this.loadLine.graphics.endFill();
+        this.addChild(this.loadLine);
+    }
+
+    private drawText() {
+        this.textField = new egret.TextField();
+        this.addChild(this.textField);
+        this.textField.text = 'loading ...';
+        this.textField.y = this.sH / 2 - 60;
+        this.textField.width = this.sW;
+        this.textField.size = 20;
+        //        this.textField.height = 50;
+        this.textField.textAlign = "center";
+    }
+
+    private drawIp() {
+        let logo: egret.Bitmap = new egret.Bitmap();
+        logo.texture = RES.getRes("p0_ip_png");
+        logo.scaleX = 0.618;
+        logo.scaleY = 0.618;
+        logo.x = this.sW - logo.width * 0.618 >> 1;
+        logo.y = (this.sH - logo.height * 0.618) / 2 - logo.height * 0.618;
+        this.addChild(logo);
+    }
+
+    public setProgress(current, total): void {
+        //this.textField.text = Math.ceil(current/total * 100)+'%';
+        //console.log((current / total));
+        this.drawLine(Math.ceil(current / total * this.sW * 0.5) + this.sW * 0.25);
+    }
+}
